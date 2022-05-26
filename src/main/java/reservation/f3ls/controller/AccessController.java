@@ -9,7 +9,7 @@ public class AccessController {
 
     @GetMapping("/home")
     public String home(){
-        return "homepage";
+        return "home";
     }
 
     @GetMapping("/search")
