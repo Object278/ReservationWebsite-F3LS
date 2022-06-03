@@ -17,8 +17,24 @@ public class AccessController {
         return "search";
     }
 
+    @GetMapping("/html_example")
+    public String html_example(){
+        return "html_example";
+    }
+
     @GetMapping("/s")
     public String s(){
         return "s";
     }
+
+    @GetMapping("/restaurant")
+    public String restaurant(){
+        return "restaurant";
+    }
+
+    @GetMapping("/toolbar")
+    public String toolbar(){
+        return "toolbar";
+    }
+
 }
