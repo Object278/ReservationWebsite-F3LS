@@ -16,6 +16,7 @@ public class SearchServiceImpl implements SearchService{
         this.mapper = mapper;
     }
 
+
     @Override
     public List<Restaurant> filter(String name, Integer distance) {
         List<Restaurant> ret = new ArrayList<>();
