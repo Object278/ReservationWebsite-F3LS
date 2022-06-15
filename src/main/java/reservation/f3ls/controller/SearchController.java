@@ -10,6 +10,7 @@ import reservation.f3ls.service.SearchService;
 
 import java.util.List;
 
+
 @Controller
 public class SearchController {
     private final SearchService service;
