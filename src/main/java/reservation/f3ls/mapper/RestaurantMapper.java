@@ -25,8 +25,11 @@ public interface RestaurantMapper {
     @Select("SELECT * FROM Restaurant")
     List<Restaurant> selectAll();
 
-    @Select("SELECT 8 FROM Restaurant WHERE Id = #{Id}")
+    @Select("SELECT * FROM Restaurant WHERE Id = #{id}")
     Restaurant selectById(Integer id);
+
+    @Select("SELECT * FROM Restaurant WHERE Name = #{name}")
+    Restaurant selectByName(String name);
 
     @Insert("INSERT INTO Restaurant (id, name) VALUES (#{id}, #{name})")
     int insertRestaurant(Restaurant restaurant);

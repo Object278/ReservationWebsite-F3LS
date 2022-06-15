@@ -17,8 +17,10 @@ public class AccessController {
         return "search";
     }
 
-    @GetMapping("/s")
-    public String s(){
-        return "s";
+    @GetMapping("/restaurant")
+    public String restaurant(){
+        return "restaurant";
     }
+
+
 }

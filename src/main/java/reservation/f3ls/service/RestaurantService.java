@@ -1,9 +1,10 @@
 package reservation.f3ls.service;
 
+import org.springframework.stereotype.Component;
 import reservation.f3ls.model.Restaurant;
 
 import java.util.List;
-
+@Component
 public interface RestaurantService {
     public boolean insert(Restaurant restaurant);
 
