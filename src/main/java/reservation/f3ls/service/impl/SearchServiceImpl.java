@@ -17,6 +17,7 @@ public class SearchServiceImpl implements SearchService{
     }
 
 
+
     @Override
     public List<Restaurant> filter(String name, Integer distance) {
         List<Restaurant> ret = new ArrayList<>();
