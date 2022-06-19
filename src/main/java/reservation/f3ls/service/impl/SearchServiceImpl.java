@@ -1,6 +1,7 @@
 package reservation.f3ls.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import reservation.f3ls.mapper.RestaurantMapper;
 import reservation.f3ls.model.Restaurant;
 import reservation.f3ls.service.SearchService;
@@ -8,6 +9,7 @@ import reservation.f3ls.service.SearchService;
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 public class SearchServiceImpl implements SearchService{
     private final RestaurantMapper mapper;
 
