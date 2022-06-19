@@ -22,21 +22,21 @@ public interface RestaurantMapper {
 //    链接：https://www.jianshu.com/p/1d51d0fa9555
 //    来源：简书
 //    著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
-    @Select("SELECT * FROM Restaurant")
+    @Select("SELECT * FROM RESTAURANTS")
     List<Restaurants> selectAll();
 
-    @Select("SELECT * FROM Restaurant WHERE Id = #{id}")
+    @Select("SELECT * FROM RESTAURANTS WHERE ID = #{id}")
     Restaurants selectById(Integer id);
 
-    @Select("SELECT * FROM Restaurant WHERE Name = #{name}")
+    @Select("SELECT * FROM RESTAURANTS WHERE NAME = #{name}")
     Restaurants selectByName(String name);
 
-    @Insert("INSERT INTO Restaurant (id, name) VALUES (#{id}, #{name})")
+    @Insert("INSERT INTO RESTAURANTS (ID, NAME) VALUES (#{id}, #{name})")
     int insertRestaurant(Restaurants restaurants);
 
-    @Update("UPDATE Restaurant SET name=#{name}  WHERE id=#{id}")
+    @Update("UPDATE RESTAURANTS SET NAME=#{name}  WHERE ID=#{id}")
     int updateRestaurant(Restaurants restaurants);
 
-    @Delete("DELETE FROM Restaurant WHERE id=#{id}")
+    @Delete("DELETE FROM RESTAURANTS WHERE ID=#{id}")
     int delete(Integer id);
 }
