@@ -3,6 +3,7 @@ package reservation.f3ls.mapper;
 import org.apache.ibatis.annotations.*;
 import reservation.f3ls.model.Tables;
 
+
 import java.util.List;
 
 @Mapper
