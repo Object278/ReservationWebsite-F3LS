@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import reservation.f3ls.model.Restaurant;
+import reservation.f3ls.model.Restaurants;
 import reservation.f3ls.service.RestaurantService;
 
 import java.util.List;
@@ -23,7 +23,7 @@ public class RestaurantsController {
      */
     @GetMapping("/selectAll")
     @ResponseBody
-    public List<Restaurant> selectAll(){
+    public List<Restaurants> selectAll(){
         return service.selectAll();
     }
 }

@@ -1,7 +1,7 @@
 package reservation.f3ls.mapper;
 
 import org.apache.ibatis.annotations.*;
-import reservation.f3ls.model.Restaurant;
+import reservation.f3ls.model.Restaurants;
 
 import java.util.List;
 
@@ -23,19 +23,19 @@ public interface RestaurantMapper {
 //    来源：简书
 //    著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
     @Select("SELECT * FROM Restaurant")
-    List<Restaurant> selectAll();
+    List<Restaurants> selectAll();
 
     @Select("SELECT * FROM Restaurant WHERE Id = #{id}")
-    Restaurant selectById(Integer id);
+    Restaurants selectById(Integer id);
 
     @Select("SELECT * FROM Restaurant WHERE Name = #{name}")
-    Restaurant selectByName(String name);
+    Restaurants selectByName(String name);
 
     @Insert("INSERT INTO Restaurant (id, name) VALUES (#{id}, #{name})")
-    int insertRestaurant(Restaurant restaurant);
+    int insertRestaurant(Restaurants restaurants);
 
     @Update("UPDATE Restaurant SET name=#{name}  WHERE id=#{id}")
-    int updateRestaurant(Restaurant restaurant);
+    int updateRestaurant(Restaurants restaurants);
 
     @Delete("DELETE FROM Restaurant WHERE id=#{id}")
     int delete(Integer id);

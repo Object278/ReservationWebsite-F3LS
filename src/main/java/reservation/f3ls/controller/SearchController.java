@@ -5,7 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
-import reservation.f3ls.model.Restaurant;
+import reservation.f3ls.model.Restaurants;
 import reservation.f3ls.service.SearchService;
 
 import java.util.List;
@@ -23,7 +23,7 @@ public class SearchController {
     //暂时返回字符串
     @PostMapping("/filter")
     @ResponseBody
-    public List<Restaurant> filter(@RequestBody String name, @RequestBody Integer distance){
+    public List<Restaurants> filter(@RequestBody String name, @RequestBody Integer distance){
         return service.filter(name, distance);
     }
 }

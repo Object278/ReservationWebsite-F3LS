@@ -1,10 +1,15 @@
 package reservation.f3ls.model;
 
-public class Restaurant {
+public class Restaurants {
     private Integer id;
     private String name;
 
+    private String description;
+
+    private String picture;
+
     private Integer xCoordination;
+
     private Integer yCoordination;
 
     public Integer getId() {
@@ -37,5 +42,21 @@ public class Restaurant {
 
     public void setyCoordination(Integer yCoordination) {
         this.yCoordination = yCoordination;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String getPicture() {
+        return picture;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setPicture(String picture) {
+        this.picture = picture;
     }
 }
