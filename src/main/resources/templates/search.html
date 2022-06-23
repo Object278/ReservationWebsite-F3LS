@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        .btn {
+
+            height: 35px;
+            width: 50px;
+            position: absolute;
+            top: 6px;
+            left: 285px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+
+        }
+
+        .form {
+
+            position: relative;
+
+        }
+
+        .search {
+
+            width: 320px;
+            height: 40px;
+            border-radius: 18px;
+            outline: none;
+            border: 1px solid #ccc;
+            padding-left: 20px;
+            position: absolute;
+
+        }
+    </style>
 </head>
 <body>
-    <h1>When you gaze at the search result, the search result gaze at you. It means here is nothing to see. O ^ ~ ^ O</h1>
-    <a href="/home">back to home</a>
+    <div class="container">
+        <form action="" class="form">
+            <input type="text" class="search" placeholder="type the name">
+            <input type="submit" class="btn" value="search">
+        </form>
+    </div>
 </body>
 </html>
