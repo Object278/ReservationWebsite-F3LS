@@ -9,4 +9,6 @@ import java.util.List;
 public interface SearchService {
 
     public List<Restaurants> filter(String name, Integer distance);
+
+    public Restaurants search(String name);
 }

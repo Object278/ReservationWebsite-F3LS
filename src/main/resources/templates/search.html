@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="https://www.thymeleaf.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="https://www.thymeleaf.org ">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -38,8 +39,8 @@
 </head>
 <body>
     <div class="container">
-        <form action="" class="form">
-            <input type="text" class="search" placeholder="type the name">
+        <form action="#" th:action="@{/search}" th:object="${SearchSubmit}" method="post" class="form">
+            <input type="text" th:field="*{name}" class="search" placeholder="type the name">
             <input type="submit" class="btn" value="search">
         </form>
     </div>

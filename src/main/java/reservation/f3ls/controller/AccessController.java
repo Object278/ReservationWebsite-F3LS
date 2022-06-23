@@ -1,7 +1,10 @@
 package reservation.f3ls.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import reservation.f3ls.model.SearchSubmit;
 
 
 @Controller
@@ -13,7 +16,7 @@ public class AccessController {
     }
 
     @GetMapping("/search")
-    public String search(){
+    public String search(@ModelAttribute("SearchSubmit") SearchSubmit submit, Model model){
         return "search";
     }
 

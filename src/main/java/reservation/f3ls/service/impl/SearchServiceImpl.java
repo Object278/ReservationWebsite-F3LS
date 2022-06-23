@@ -40,4 +40,9 @@ public class SearchServiceImpl implements SearchService{
         }
         return ret;
     }
+
+    @Override
+    public Restaurants search(String name) {
+        return mapper.selectByName(name);
+    }
 }
